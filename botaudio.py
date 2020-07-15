@@ -38,7 +38,7 @@ def run_bot():
     def go_start(message):
         return audioface.start(message=message)
 
-    # переходим в режим распознования лиц.
+    # переходим в режим распознавания лиц.
     @audioface.bot.callback_query_handler(func=lambda call: call.data.startswith("findfase"))
     def go_findface(call):
         return audioface.findfase_reply(call=call)
