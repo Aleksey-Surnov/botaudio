@@ -13,9 +13,9 @@ class Telegramaudiobot():
 
     def start(self, message):
         self.bot.send_message(message.from_user.id, 'Здравствуйте. Я тестовый бот. У меня есть навыки: '
-                                                    '\n1. Распознания лиц на фотографиях.'
-                                                    '\n2. Конвертирования аудиосообщений в формат ".wav" c частотой 16kGh.'
-                                                    '\nДля распознования лиц нажмите кнопку "Найти лицо".'
+                                                    '\n1. Распознавания лиц на фотографиях.'
+                                                    '\n2. Конвертирования аудиосообщений в формат ".wav" c частотой 16kHz.'
+                                                    '\nДля распознавания лиц нажмите кнопку "Найти лицо".'
                                                     '\nДля конвертирования аудиосообщений в формат ".wav" нажмите кнопку "Конвертер аудиосообщений".', parse_mode="Markdown")
         self.bot.send_message(message.chat.id, "Сделайте выбор нажав кнопку:", reply_markup=self.main_keybard())
         count = self.vd.verify_status(user_id=message.from_user.id)[0]
@@ -37,8 +37,8 @@ class Telegramaudiobot():
 
     def audio_reply(self, call):    # режим обработчика аудиосообщений.
         self.vd.change_status(status='audio', user_id=call.from_user.id)
-        self.bot.send_message(call.from_user.id, text = 'Пришлите мне аудиосообщение для конвертации в формат ".wav" с частотой дискретизации 16kGh.'
-                                                           '\nДля этого нажммите значок микрофона и удерживайте его до тех пор пока будете говорить.'
+        self.bot.send_message(call.from_user.id, text = 'Пришлите мне аудиосообщение для конвертации в формат ".wav" с частотой дискретизации 16kHz.'
+                                                           '\nДля этого нажмите значок микрофона и удерживайте его до тех пор пока будете говорить.'
                                                            '\nКак только закончите запись отпустите значок микрофона.')
 
     def write_in_bd(self, user_id, format, audio_file, count_user_file, name_audio):
