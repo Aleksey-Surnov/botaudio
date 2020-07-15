@@ -45,7 +45,7 @@ class Telegramaudiobot():
         self.vd.add_audio_message(user_id=user_id, format='wav', audio_file=audio_file,
                                   count_user_file=count_user_file, name_audio=name_audio)
 
-    def go_back(self):               # клавиатура возвразата.
+    def go_back(self):               # клавиатура возврата.
         keyboardback = types.InlineKeyboardMarkup(row_width=1)
         back_button = types.InlineKeyboardButton(text="<<- Назад", callback_data="back")
         keyboardback.add(back_button)
@@ -58,7 +58,7 @@ class Telegramaudiobot():
     def valid_user(self, user_id):   # проверка пользователя.
         return self.vd.verify_user(user_id=user_id)
 
-    def valid_status(self, user_id): # запрос состояния (режима) пользователя.
+    def valid_status(self, user_id): # запрос состояния (режима) пользователя в БД.
         return self.vd.get_status(user_id=user_id)
 
     def init_db(self):
