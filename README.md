@@ -29,7 +29,7 @@
 
 
 Работа с фотографиями на которых бот не нашел лица.
-![alt text](screenshots/find_photo_true.png "Нет лица.")
+![alt text](screenshots/find_photo_false.png "Нет лица.")
 
 ## Модули
 1. `DBmodul/dbbot.py` содержит класс для работы с БД SQLite3. 
