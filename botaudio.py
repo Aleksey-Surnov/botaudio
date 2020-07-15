@@ -76,7 +76,7 @@ def run_bot():
                                    'Если хотите продолжить то пришлите еще фотографию.'+'\n'+'Если хотите вернутся к началу нажмите кнопку "Назад".',
                                    reply_markup=audioface.go_back())
 
-    # принимаем аудиосообщение и конвертируем в формат ".wav" с частотой семплирования 16 kGh.
+    # принимаем аудиосообщение и конвертируем в формат ".wav" с частотой семплирования 16 kHz.
     @audioface.bot.message_handler(content_types=['voice'], func=lambda message: audioface.valid_status(user_id=message.from_user.id)[0] == 'audio')
     def convert_audio(message):
         audio_message = audioface.bot.get_file(message.voice.file_id)
