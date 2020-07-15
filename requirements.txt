@@ -1,0 +1,13 @@
+certifi==2020.6.20
+cffi==1.14.0
+chardet==3.0.4
+idna==2.10
+numpy==1.19.0
+opencv-python==4.3.0.36
+pycparser==2.20
+pydub==0.24.1
+pyTelegramBotAPI==3.7.2
+requests==2.24.0
+six==1.15.0
+SoundFile==0.10.2
+urllib3==1.25.9
