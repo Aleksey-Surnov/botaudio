@@ -13,7 +13,7 @@
     - **MANAGERID**: ваш id в сети telegram.
     - **TOKENBOT**: token бота в telegram.
 - Перед запуском программы установите зависимости командой в консоли `pip install -r requirements.txt`
-- ВАЖНО: для правильной работы бота необходимо отдельно поставить **ffmpeg**. Он необходим для корректного пуска pydub.
+- ВАЖНО: для правильной работы бота необходимо отдельно поставить **ffmpeg**. Он нужен для корректного пуска pydub.
     - **Linux Ubuntu**: `apt-get install ffmpeg libavcodec-extra`
     - **Windows**: просто скачайте ffmpeg lib, распакуйте и добавьте `\ffmpeg\bin(В папке 3 файла ffmpeg.exe, ffplay.exe, ffprobe.exe)` в папку вашего проекта. 
     - Обязательно проверьте пути! Подробнее об установке на все ОС читайте здесь https://github.com/jiaaro/pydub
