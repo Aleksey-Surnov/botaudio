@@ -10,5 +10,5 @@
 - ВАЖНО: для правильной работы бота необходимо отдельно поставить **ffmpeg**. Он необходим для правильной работы pydub.
     - **Linux Ubuntu**: `apt-get install ffmpeg libavcodec-extra`
     - **Windows**: просто скачайте ffmpeg lib, распакуйте и добавьте `\ffmpeg\bin(В папке 3 файла ffmpeg.exe, ffplay.exe, ffprobe.exe)` в папку вашего проекта. 
-    - Обязательно проверьте пути! Подробнее о установке читайте на все ОС читайте здесь https://github.com/jiaaro/pydub
+    - Обязательно проверьте пути! Подробнее о установке на все ОС читайте здесь https://github.com/jiaaro/pydub
 
