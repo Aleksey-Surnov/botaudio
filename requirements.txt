@@ -2,7 +2,7 @@ certifi==2020.6.20
 cffi==1.14.0
 chardet==3.0.4
 idna==2.10
-numpy==1.19.0
+numpy==1.22.0
 opencv-python==4.3.0.36
 pycparser==2.20
 pydub==0.24.1
